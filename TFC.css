@@ -1,0 +1,67 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+	font-size: 30px;
+    font-family: OCR A Std, monospace;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto 50px auto;
+    background:linear-gradient(#101010, #202020,#303030);
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 30px 0px;
+}
+nav a:hover{
+    color: #860000;
+    border-bottom: 2px #860000;
+}
+
+.conteneur{
+  margin: 0px 20px;
+  height: 1500px;
+}
+
+h1{
+ color: white;
+ padding: 20px;
+ border: 0px solid black;
+ background-color: #101010;
+ position: center;
+ text-align: center;
+ text-decoration: underline;
+}
+
+p{
+ text-decoration: underline;
+ text-align: center;
+ font-size: 40px;
+ color: white;
+}
